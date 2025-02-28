@@ -31,11 +31,19 @@ const AddFlowerPopUp: React.FC<AddFlowerPopUpProps> = ({ visible, onClose, onSav
 
 
   const handleSave = () => {
-    const flowerData = {  flowerImage, flowerName, category, price ,};
+    const flowerData = { flowerImage, flowerName, category, price };
     console.log("Saved Flower Data:", flowerData);
     onSave(flowerData);
+
+    // Clear input fields after saving
+    setFlowerName("");
+    setCategory("");
+    setPrice("");
+    setImage(null);
+
     onClose();
   };
+
 
   const pickImage = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -71,7 +79,7 @@ const AddFlowerPopUp: React.FC<AddFlowerPopUpProps> = ({ visible, onClose, onSav
     <Modal visible={visible} animationType="slide" transparent={true} onRequestClose={onClose}>
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
-          <Text style={styles.modalTitle}>Add New Flower</Text>
+          <Text style={styles.modalTitle}>Add New Tool</Text>
 
           <TouchableOpacity style={styles.closeButton} onPress={onClose}>
             <Ionicons name="close" size={24} color="#000" />
@@ -134,14 +142,14 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
   },
   imagePicker: {
-    backgroundColor: "#fdc9f9",
+    backgroundColor: "#ffe3c3",
     padding: 10,
     borderRadius: 5,
     marginBottom: 15,
   },
   imagePickerText: {
     fontFamily: "Poppins_500Medium",
-    color: "#000",
+    color: "#f8993b",
   },
   imagePreview: {
     width: 100,
@@ -150,7 +158,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   saveButton: {
-    backgroundColor: "#d601c3",
+    backgroundColor: "#D98324",
     width: "100%",
     fontFamily: "Poppins_500Medium",
   },

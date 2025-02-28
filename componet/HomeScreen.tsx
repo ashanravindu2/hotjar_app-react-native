@@ -5,43 +5,43 @@ import { Ionicons } from "@expo/vector-icons"; // Using Ionicons for icons
 import Icon from "react-native-vector-icons/Ionicons";
 
 // Sample data for flowers
-const trendingFlowers = [
-    { id: '1', name: 'Lily', price: '$12', image: 'https://images.unsplash.com/photo-1704728323042-0c4cf765e9e9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '2', name: 'Orchid', price: '$18', image: 'https://images.unsplash.com/photo-1534885320675-b08aa131cc5e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '3', name: 'Rose', price: '$10', image: 'https://images.unsplash.com/photo-1559563362-c667ba5f5480?q=80&w=1402&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '4', name: 'Tulip', price: '$15', image: 'https://images.unsplash.com/photo-1589994160839-163cd867cfe8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+const trendingTools = [
+    { id: '1', name: 'Angle Grinder', price: '$50', image: 'https://example.com/grinder.jpg' },
+    { id: '2', name: 'Cordless Drill', price: '$80', image: 'https://example.com/drill.jpg' },
+    { id: '3', name: 'Circular Saw', price: '$120', image: 'https://example.com/saw.jpg' },
+    { id: '4', name: 'Measuring Tape', price: '$10', image: 'https://example.com/tape.jpg' },
 ];
 
-const featuredFlowers = [
-    { id: '1', name: 'Lily', price: '$12', image: 'https://images.unsplash.com/photo-1704728323042-0c4cf765e9e9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '2', name: 'Orchid', price: '$18', image: 'https://images.unsplash.com/photo-1599463740831-a5015ef7b65a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '3', name: 'Lily', price: '$12', image: 'https://images.unsplash.com/photo-1567428051128-5f09a0200655?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '4', name: 'Orchid', price: '$18', image: 'https://images.unsplash.com/photo-1582862058398-c157c8424b54?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '5', name: 'Lily', price: '$12', image: 'https://plus.unsplash.com/premium_photo-1676498578286-94f337c53e81?q=80&w=1428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '6', name: 'Orchid', price: '$18', image: 'https://plus.unsplash.com/premium_photo-1713823800686-9d13d1df352a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+const featuredTools = [
+    { id: '1', name: 'Angle Grinder', price: '$50', image: 'https://example.com/grinder.jpg' },
+    { id: '2', name: 'Cordless Drill', price: '$80', image: 'https://example.com/drill.jpg' },
+    { id: '3', name: 'Jigsaw', price: '$100', image: 'https://example.com/jigsaw.jpg' },
+    { id: '4', name: 'Impact Driver', price: '$90', image: 'https://example.com/impactdriver.jpg' },
+    { id: '5', name: 'Table Saw', price: '$250', image: 'https://example.com/tablesaw.jpg' },
+    { id: '6', name: 'Screwdriver Set', price: '$20', image: 'https://example.com/screwdriverset.jpg' },
 ];
 
-const flowerCategories = [
-    { id: '1', name: 'Roses' },
-    { id: '2', name: 'Tulips' },
-    { id: '3', name: 'Lilies' },
-    { id: '4', name: 'Orchids' },
-    { id: '5', name: 'Sunflowers' },
-
+const toolCategories = [
+    { id: '1', name: 'Drills' },
+    { id: '2', name: 'Saws' },
+    { id: '3', name: 'Grinders' },
+    { id: '4', name: 'Measuring Tools' },
+    { id: '5', name: 'Hand Tools' },
 ];
 
-const allFlowers = [
-    { id: '1', name: 'Rose', price: '$10', category: 'Roses', image: 'https://images.pexels.com/photos/5944199/pexels-photo-5944199.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' },
-    { id: '2', name: 'Tulips', price: '$15',category: 'Tulips', image: 'https://images.unsplash.com/photo-1589994160839-163cd867cfe8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '3', name: 'Lily', price: '$12', category: 'Lilies', image: 'https://plus.unsplash.com/premium_photo-1676498578286-94f337c53e81?q=80&w=1428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '4', name: 'Orchid', price: '$18', category: 'Orchids', image: 'https://images.unsplash.com/photo-1598797369458-efbff9e6dc22?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '5', name: 'Sunflower', price: '$8', category: 'Sunflowers', image: 'https://images.unsplash.com/photo-1551945326-df678a97c3af?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '6', name: 'Lily', price: '$12', category: 'Lilies', image: 'https://images.unsplash.com/photo-1452957689853-fd2b4f3d3aa2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '7', name: 'Orchid', price: '$18', category: 'Orchids', image: 'https://images.unsplash.com/photo-1598797369458-efbff9e6dc22?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '8', name: 'Sunflower', price: '$8', category: 'Sunflowers', image: 'https://images.unsplash.com/photo-1551945326-df678a97c3af?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '9', name: 'Rose', price: '$10', category: 'Roses', image: 'https://images.unsplash.com/photo-1518709779341-56cf4535e94b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '10', name: 'Tulips', price: '$15', category: 'Tulips', image: 'https://plus.unsplash.com/premium_photo-1677620614560-5f1b32416563?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    { id: '12', name: 'Orchid', price: '$18', category: 'Orchids', image: 'https://images.unsplash.com/photo-1598797369458-efbff9e6dc22?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+const allTools = [
+    { id: '1', name: 'Cordless Drill', price: '$80', category: 'Drills', image: 'https://example.com/drill.jpg' },
+    { id: '2', name: 'Circular Saw', price: '$120', category: 'Saws', image: 'https://example.com/saw.jpg' },
+    { id: '3', name: 'Angle Grinder', price: '$50', category: 'Grinders', image: 'https://example.com/grinder.jpg' },
+    { id: '4', name: 'Impact Driver', price: '$90', category: 'Drills', image: 'https://example.com/impactdriver.jpg' },
+    { id: '5', name: 'Measuring Tape', price: '$10', category: 'Measuring Tools', image: 'https://example.com/tape.jpg' },
+    { id: '6', name: 'Table Saw', price: '$250', category: 'Saws', image: 'https://example.com/tablesaw.jpg' },
+    { id: '7', name: 'Jigsaw', price: '$100', category: 'Saws', image: 'https://example.com/jigsaw.jpg' },
+    { id: '8', name: 'Hammer', price: '$15', category: 'Hand Tools', image: 'https://example.com/hammer.jpg' },
+    { id: '9', name: 'Screwdriver Set', price: '$20', category: 'Hand Tools', image: 'https://example.com/screwdriverset.jpg' },
+    { id: '10', name: 'Chisel Set', price: '$30', category: 'Hand Tools', image: 'https://example.com/chiselset.jpg' },
+    { id: '11', name: 'Clamp', price: '$25', category: 'Hand Tools', image: 'https://example.com/clamp.jpg' },
+    { id: '12', name: 'Workbench', price: '$200', category: 'Measuring Tools', image: 'https://example.com/workbench.jpg' },
 ];
 
 export default function HomeScreen() {
@@ -50,8 +50,8 @@ export default function HomeScreen() {
 
     // Filter the flowers based on selected category
     const filteredFlowers = selectedCategory
-        ? allFlowers.filter(flower => flower.category === selectedCategory)
-        : allFlowers;
+        ? allTools.filter(flower => flower.category === selectedCategory)
+        : allTools;
 
     const renderFlowerItem = ({ item }) => (
         <View style={styles.card}>
@@ -88,7 +88,7 @@ export default function HomeScreen() {
             <View style={{ marginTop: 50 ,}}>
                 {!isSearching ? (
                     <View style={styles.navbar}>
-                        <Text style={styles.title}>AshRu Shops</Text>
+                        <Text style={styles.title}>Hotjar Shops</Text>
                         <TouchableOpacity onPress={() => setIsSearching(true)}>
                             <Ionicons name="search" size={24} color="#363636" />
                         </TouchableOpacity>
@@ -110,9 +110,9 @@ export default function HomeScreen() {
 
                 {/* Trending Flowers Section */}
                 <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>Trending Flowers</Text>
+                    <Text style={styles.sectionTitle}>Trending Tools</Text>
                     <FlatList
-                        data={trendingFlowers}
+                        data={trendingTools}
                         renderItem={renderFlowerItem}
                         keyExtractor={(item) => item.id}
                         horizontal
@@ -122,9 +122,9 @@ export default function HomeScreen() {
 
                 {/* Featured Flowers Section */}
                 <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>Featured Flowers</Text>
+                    <Text style={styles.sectionTitle}>Featured Tools</Text>
                     <FlatList
-                        data={featuredFlowers}
+                        data={featuredTools}
                         renderItem={renderFlowerItem}
                         keyExtractor={(item) => item.id}
                         horizontal
@@ -134,9 +134,9 @@ export default function HomeScreen() {
 
                 {/* Flower Categories Section */}
                 <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>Flower Categories</Text>
+                    <Text style={styles.sectionTitle}>Tool Categories</Text>
                     <FlatList
-                        data={flowerCategories}
+                        data={toolCategories}
                         renderItem={renderCategoryItem}
                         keyExtractor={(item) => item.id}
                         horizontal
@@ -147,7 +147,7 @@ export default function HomeScreen() {
                 {/* Flowers of Selected Category Section */}
                 {selectedCategory && (
                     <View style={styles.section}>
-                        <Text style={styles.sectionTitle}>{selectedCategory} Flowers</Text>
+                        <Text style={styles.sectionTitle}>{selectedCategory} Tool</Text>
                         <FlatList
                             data={filteredFlowers}
                             renderItem={renderFlowerItem}
@@ -184,14 +184,13 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         borderBottomWidth: 3,
-        borderBottomColor: "#ff0000",
-        paddingBottom: 20,
+        borderBottomColor: "#8f5009",
+        paddingBottom: 15,
     },
     title: {
         fontSize: 24,
         fontWeight: "900",
-        color: "#363636",
-
+        color: "#D98324",
     },
     inputExpanded: {
         backgroundColor: "transparent",
@@ -215,7 +214,7 @@ const styles = StyleSheet.create({
         width: 150,
         marginRight: 15,
         elevation: 5,
-        shadowColor: "#80004c",
+        shadowColor: "#000000",
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,
         shadowRadius: 3.5,
@@ -234,8 +233,8 @@ const styles = StyleSheet.create({
         color: "#363636",
     },
     flowerPrice: {
-        fontSize: 14,
-        color: "#FF1493",
+        fontSize: 21,
+        color: "#ff8800",
     },
     categoryCard: {
         backgroundColor: "#fff",
@@ -263,7 +262,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     selectedCategoryCard: {
-        backgroundColor: "#FF1493", // Pink background when selected
+        backgroundColor: "#D98324", // Pink background when selected
     },
     selectedCategoryText: {
         color: "#fff", // White text when selected

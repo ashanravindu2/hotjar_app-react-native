@@ -56,7 +56,7 @@ export default function CartScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Flower Store</Text>
+            <Text style={styles.title}>Tool Cart</Text>
 
             {/* Flower List - Takes up 1/2 of the screen */}
             <View style={styles.flowerListContainer}>
@@ -128,7 +128,7 @@ export default function CartScreen() {
         },
         cartContainer: {
             flex: 0.5, // Takes half of the screen
-            backgroundColor: "#f8e1f6",
+            backgroundColor: "#ffe4c4",
             padding: 10,
             borderTopLeftRadius: 20,
             borderTopRightRadius: 20,
@@ -157,7 +157,7 @@ export default function CartScreen() {
         image: {
             borderStyle : "solid",
             borderWidth : 4,
-            borderColor : "#ffaeec",
+            borderColor : "#ffc98d",
             width: 100,
             height: 100,
             borderRadius: 10,
@@ -169,7 +169,7 @@ export default function CartScreen() {
             fontWeight: "bold",
         },
         addButton: {
-            backgroundColor: "#d601c3",
+            backgroundColor: "#D98324",
             padding: 10,
             gap: 5,
             borderRadius: 5,
@@ -180,27 +180,33 @@ export default function CartScreen() {
             flexDirection: "row",
             justifyContent: "space-between",
             padding: 10,
-            borderWidth: 1,
+            borderWidth: 2,
             borderRadius: 10,
-            marginVertical: 5,
-            backgroundColor: "#fff",
+            borderColor :  "#fff",
+            marginVertical: 2,
+            backgroundColor: "#D98324",
+            textAlign : "center",
         },
         cartText: {
             fontSize: 16,
+            color : "#fff",
+            textAlign : "center",
+            fontWeight :"bold"
+
         },
         quantityControls: {
             flexDirection: "row",
             gap: 10,
         },
         minusButton: {
-            backgroundColor: "#faa5c8",
+            backgroundColor: "#fabd7a",
             padding: 5,
             borderRadius: 5,
             marginHorizontal: 5,
 
         },
         plusButton: {
-            backgroundColor: "#d601c3",
+            backgroundColor: "#D98324",
             padding: 5,
             borderRadius: 5,
             marginHorizontal: 5,
@@ -213,10 +219,11 @@ export default function CartScreen() {
             opacity: 0.2,
         },
         footer: {
-            backgroundColor: "#f8e1f6",
+            padding : 12,
+            backgroundColor: "#ffe4c4",
             marginTop: 5,
             alignItems: "center",
-            bottom: 40,
+            bottom: 20,
         },
         totalText: {
             fontSize: 18,
@@ -227,9 +234,12 @@ export default function CartScreen() {
             padding: 11,
             borderRadius: 11,
             marginTop: 10,
+            width:"100%"
+
         },
         buttonText: {
             color: "#fff",
             fontWeight: "bold",
+            textAlign:"center"
         }
     });

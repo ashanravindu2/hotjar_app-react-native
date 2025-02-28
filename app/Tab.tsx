@@ -31,16 +31,16 @@ export default function TabController() {
                     if (route.name === "Home") {
                         iconName = focused ? "home" : "home-outline";
                     } else if (route.name === "Flower") {
-                        iconName = focused ? "flower" : "flower-outline";
+                        iconName = focused ? "hammer" : "hammer-outline";
                     } else if (route.name === "FlowerItem") {
-                        iconName = focused ? "leaf" : "leaf-outline";
+                        iconName = focused ? "build" : "build-outline";
                     } else if (route.name === "Cart") {
                         iconName = focused ? "cart" : "cart-outline";
                     }
 
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
-                tabBarActiveTintColor: "#ff5733", // Active icon color
+                tabBarActiveTintColor: "#ff9900", // Active icon color
                 tabBarInactiveTintColor: "gray", // Inactive icon color
             })}
         >
